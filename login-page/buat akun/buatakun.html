@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Akun</title>
+    <link rel="stylesheet" href="buatakun.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #041C32;"> 
+    <div class="container" id="buatAkun">
+        <div class="container-satu">
+            <p class="container-satu-txt"> Buat Tiket Mu Sekarang.</p>
+        </div>
+        <div class="container-dua">
+            <div class="namaDP">
+                <p class="input-nama">Nama Depan</p>
+                <input type="text" class="form-nama">
+            </div>
+            <div class="namaDP">
+                <p class="input-nama">Nama Belakang</p>
+                <input type="text" class="form-nama">
+            </div>
+        </div>
+        <div class="container-tiga">
+            <!-- email input -->
+            <p class="input-email">Email</p>
+            <i class="fa-solid fa-at"></i>
+            <input type="text" class="form-email">
+            <!-- pass input -->
+            <p class="input-email">Password</p>
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" class="form-pass" name="logemail" id="masukanPassword" autocomplete="off">
+            <button id="lihat" class="pass-cta-satu">
+                <i class="fas fa-eye"></i>
+            </button>
+            <!-- rpt pass input -->
+            <p class="input-email">Ulangi Password</p>
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" class="form-pass" name="logemail" id="ulangiPassword" autocomplete="off">
+        </div>
+            <!-- barcode img -->
+            <div class="bc-img">
+                <img src="/asset/chevabarcode.jpg" alt="cheva barcode" class="cheva-bc">
+            </div>
+            <!-- btn grub  -->
+            <button class="buat-cta" id="submitBtn">
+                <a href="/login-page/buat akun acc/akunAktif.html" >Buat Sekarang</a>
+            </button>
+            <button class="kembali-cta" >
+                <a href="/login-page/login home/index.html" id="">Masih Ragu ?</a>
+            </button>
+    </div>
+</body>
+</html>

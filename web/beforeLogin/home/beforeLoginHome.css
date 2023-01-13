@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* html , body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    color: white;
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    color: white;
+    background-color: transparent;
+    transition: 0.2s;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: space-between;
+    width: 100%;
+    top: 0px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 25px;
+    margin-right: 20px;
+}
+
+.nav-judul{
+    margin-left: 15px;
+}
+
+.nav-judul a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-judul a:hover {
+    text-decoration: none;
+    color: #ECB365;
+    transition: all 0.2s ease;
+}
+
+nav ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    display: flex;
+    transition: all 0.2s ease-in-out;
+
+}
+
+li a:hover::after {
+    width: 100%;
+    display: block;
+    height: 3px;
+    background-color: #ECB365;
+}
+
+.container-satu{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 200px;
+    padding: 10px;
+    gap: 30px;
+}
+
+.vector-satu{
+    width: 650px;
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+}
+
+.container-satu-txt{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.container-satu-judul{
+    font-size: 40px;
+    font-weight: bold;
+    width: 650px;
+    /* text-align: center; */
+}
+
+.container-satu-paragraf{
+    font-size: 25px;
+}
+
+.mulai-belajar{
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.mulai-belajar:hover{
+    background-color: #ECB365;
+    transition: 0.2s linear;
+}
+
+.container-dua{
+    padding-top: 250px;
+}
+
+.container-dua-judul{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.container-dua-isi{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    gap: 50px;
+}
+
+.isi-satu-container-dua{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 250px;
+}
+
+.logo-foto{
+    width: 150px;
+}
+
+.container-tiga{
+    padding-top: 250px;
+}
+
+.container-tiga-judul{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.container-tiga-isi{
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+
+.foto-dua{
+    width: 500px;
+}
+
+.container-tiga-txt{
+    width: 900px;
+    font-size: 20px;
+    font-weight: 500;
+}
