@@ -70,83 +70,67 @@ li a:hover::after {
     background-color: #ECB365;
 }
 
-.container-satu{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    padding-top: 130px;
+.container-tiga{
+    padding-top: 100px;
 }
 
-.vector-satu{
-    width: 550px;
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
-}
-
-.container-satu-txt{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.container-satu-judul{
+.container-tiga-judul{
     font-size: 40px;
     font-weight: bold;
-    width: 650px;
-    /* text-align: center; */
-}
-
-.container-satu-paragraf{
-    font-size: 25px;
-}
-
-.mulai-belajar{
-    width: 150px;
-    height: 50px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 500;
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-}
-
-.mulai-belajar:hover{
-    background-color: #ECB365;
-    transition: 0.2s linear;
-}
-
-.container-dua{
-    padding-top: 250px;
-}
-
-.container-dua-judul{
     text-align: center;
-    font-size: 40px;
-    font-weight: bold;
     text-transform: capitalize;
 }
 
-.container-dua-isi{
-    display: flex;
+.container-tiga-isi{
     justify-content: center;
-    padding: 15px;
-    gap: 50px;
+    display: flex;
+    gap: 30px;
 }
 
-.isi-satu-container-dua{
+.foto-dua{
+    width: 450px;
+}
+
+.container-tiga-txt{
+    width: 700px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.container-tiga-isi-dua{
+    margin-top: 50px;
+    justify-content: center;
     display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+}
+
+.container-empat{
+    padding-top: 50px;
+}
+
+.container-empat-judul{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.container-empat-isi{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    border-radius: 20px;
-    width: 200px;
 }
 
-.logo-foto{
-    width: 100px;
+.vector-dua{
+    width: 450px;
+}
+
+.text-container-empat{
+    text-align: center;
+    width: 700px;
 }
 
 .footer{
