@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* html , body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #041C32;
+}
+
+.kembali{
+    display: flex;
+    align-items: center;
+    padding: 20px;    
+}
+
+.kembali-link{
+    text-decoration: none;
+}
+
+.kembali-cta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.kembali-cta:hover{
+    background-color: #0F4C75;
+    transition: 0.1s ease;
+}
+
+.pembayaran-judul{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.form{
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 900px;
+    padding: 15px;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    text-transform: capitalize;
+    margin: 0px;
+    font-size: 15px;
+}
+
+.pilihan-paket-txt1{ 
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pilihan-paket-txt2{ 
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.harga-paket span{
+    font-weight: bold;
+}
+
+.rincian-judul{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+    text-transform: capitalize;
+}
+
+.rincian{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    text-transform: capitalize;
+    margin: 0px;
+    font-size: 15px;
+}
+
+.rincian-pembayaran-txt {
+    margin: 10px 0px 0px 0px;
+}
+
+.rincian-harga {
+    margin: 10px 0px 0px 0px;
+    font-weight: bold;
+}
+
+.total-pembayaran {
+    margin: 10px 0px 0px 0px;
+    gap: 10px;
+    text-decoration: line-through;
+}
+.span{
+    margin: 10px 0px 0px 0px;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.login-txt{
+    font-size: 17px;
+    font-weight: bold;
+    margin: 30px 0px 0px 0px;
+    text-transform: capitalize;
+}
+
+.button{
+    display: flex;
+    gap: 15px;
+}
+
+.cta{
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #ECB365;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.cta-dua{
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: #0F4C75;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.cta-dua:hover{
+    transition: 0.2 linear;
+    opacity: 80%;
+}
+
+.cta:hover{
+    transition: 0.2 linear;
+    border: 2px solid white;
+}
+
+.footer{
+    background-color: #04293A;
+    margin-top: 150px;
+    padding-bottom: 30px;
+}
+
+.footer-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.isi-footer{
+    display: flex;
+    margin-top: 50px;
+    padding-left: 20px;
+    gap: 40px;
+}
+
+.isi-footer-satu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 250px;
+}
+
+.judul-isi-footer {
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text-isi-footer{
+    margin: 0px;
+}
+
+.brand{
+    font-size: 30px;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+a {
+    color: #0F4C75;
+}
+
+a:hover{
+    color: white;
+    transition: 0.2s linear;
+}
+
+.copyright-txt{
+    padding-right: 20px;
+    text-align: end;
+    opacity: 50%;
+}
+
+/* ipad */
+@media screen and (min-width: 600px) {
+    .form{
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 700px;
+        padding: 15px;
+    }
+
+    .footer{
+        background-color: #04293A;
+        margin-top: 185px;
+        padding-bottom: 30px;   
+    }
+    
+    .footer-container{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .isi-footer{
+        display: flex;
+        margin-top: 50px;
+        padding-left: 20px;
+        gap: 40px;
+    }
+    
+    .isi-footer-satu{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 250px;
+    }
+    
+    .judul-isi-footer {
+        margin: 0px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .text-isi-footer{
+        margin: 0px;
+    }
+    
+    .brand{
+        font-size: 30px;
+        display: flex;
+        gap: 20px;
+        margin-top: 10px;
+    }
+    
+    a {
+        color: #0F4C75;
+    }
+    
+    a:hover{
+        color: white;
+        transition: 0.2s linear;
+    }
+    
+    .copyright-txt{
+        padding-right: 20px;
+        text-align: end;
+        opacity: 50%;
+    }
+    
+}
+/* mobile */
+@media screen and (max-width: 500px) {
+    .kembali{
+        display: flex;
+        align-items: center;
+        padding: 20px;    
+    }
+    
+    .kembali-link{
+        text-decoration: none;
+    }
+    
+    .kembali-cta{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        padding: 10px;
+        width: 100px;
+        border: 2px solid white;
+        border-radius: 10px;
+        color: white;
+        background-color: transparent;
+        cursor: pointer;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    
+    .kembali-cta:hover{
+        background-color: #0F4C75;
+        transition: 0.1s ease;
+    }
+    
+    .pembayaran-judul{
+        font-size: 17px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    
+    .container{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    .form{
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 300px;
+        padding: 15px;
+    }
+    
+    .total{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        text-transform: capitalize;
+        margin: 0px;
+        font-size: 15px;
+    }
+    
+    .pilihan-paket-txt1{ 
+        margin: 0px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .pilihan-paket-txt2{ 
+        margin-top: 5px;
+        margin-bottom: 0px;
+        font-size: 10px;
+    }
+    
+    .harga-paket span{
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+    .harga-paket{
+        font-size: 10px;
+    }
+    
+    .rincian-judul{
+        font-size: 15px;
+        font-weight: bold;
+        margin: 0px;
+        text-transform: capitalize;
+    }
+    
+    .rincian{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        text-transform: capitalize;
+        margin: 0px;
+        font-size: 10px;
+    }
+    
+    .rincian-pembayaran-txt {
+        margin: 5px 0px 0px 0px;
+    }
+    
+    .rincian-harga {
+        margin: 5px 0px 0px 0px;
+        font-weight: bold;
+    }
+    
+    .total-pembayaran {
+        margin: 5px 0px 0px 0px;
+        gap: 10px;
+        text-decoration: line-through;
+    }
+    .span{
+        margin: 5px 0px 0px 0px;
+        gap: 10px;
+        font-weight: bold;
+    }
+    
+    .login-txt{
+        font-size: 15px;
+        font-weight: bold;
+        margin: 30px 0px 0px 0px;
+        text-transform: capitalize;
+    }
+    
+    .button{
+        display: flex;
+        gap: 15px;
+    }
+    
+    .cta{
+        margin-top: 10px;
+        width: 70px;
+        height: 30px;
+        color: white;
+        background-color: transparent;
+        border: 2px solid #ECB365;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    
+    .cta-dua{
+        margin-top: 10px;
+        width: 70px;
+        height: 30px;
+        color: white;
+        background-color: #0F4C75;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    
+    .cta-dua:hover{
+        transition: 0.2 linear;
+        opacity: 80%;
+    }
+    
+    .cta:hover{
+        transition: 0.2 linear;
+        border: 2px solid white;
+    }
+
+    .footer{
+        background-color: #04293A;
+        margin-top: 50px;
+        padding-bottom: 30px;
+    }
+    
+    .footer-container{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .isi-footer{
+        display: flex;
+        margin-top: 50px;
+        gap: 0px;
+        padding-left: 20px;
+        flex-direction: column;
+    }
+    
+    .isi-footer-satu{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .judul-isi-footer {
+        margin: 0px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .text-isi-footer{
+        margin: 0px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .text-isi-footer-telp{
+        margin: 0px;
+        gap: 10px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .brand{
+        font-size: 30px;
+        display: flex;
+        gap: 20px;
+        margin-top: 10px;
+    }
+    
+    a {
+        color: #0F4C75;
+    }
+    
+    a:hover{
+        color: white;
+        transition: 0.2s linear;
+    }
+    
+    .copyright-txt{
+        text-align: center;
+        font-size: 15px;
+        opacity: 50%;
+    }
+}

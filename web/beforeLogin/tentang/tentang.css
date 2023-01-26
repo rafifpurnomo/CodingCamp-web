@@ -190,3 +190,204 @@ a:hover{
     text-align: end;
     opacity: 50%;
 }
+
+@media screen and (max-width: 500px) {
+    .navbar{
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        background-color: transparent;
+        transition: 0.2s;
+        justify-content: space-between;
+        width: 100%;
+        top: 0px;
+    }
+    
+    .nav-list{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+        display: flex;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 0px;
+        margin-right: 0px;
+    }
+    
+    .nav-judul{
+        margin-bottom: 0px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 0px;
+    }
+    
+    .nav-judul a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav-judul a:hover {
+        text-decoration: none;
+        color: #ECB365;
+        transition: all 0.2s ease;
+    }
+    
+    nav ul {
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    li a:after{
+        content: "";
+        width: 0%;
+        height: 3px;
+        display: block;
+        transition: all 0.2s ease-in-out;
+    
+    }
+    
+    li a:hover::after {
+        width: 100%;
+        display: block;
+        height: 3px;
+        background-color: #ECB365;
+    }
+    
+    .container-tiga{
+        padding-top: 120px;
+    }
+    
+    .container-tiga-judul{
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    
+    .container-tiga-isi{
+        justify-content: center;
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .foto-dua{
+        width: 300px;
+    }
+    
+    .container-tiga-txt{
+        width: 300px;
+        font-size: 15px;
+        font-weight: unset;
+        text-align: justify;
+    }
+    
+    .container-tiga-isi-dua{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+    }
+    
+    .container-empat{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container-empat-judul{
+        font-size: 25px;
+        width: 200px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    
+    .container-empat-isi{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .vector-dua{
+        width: 300px;
+    }
+    
+    .text-container-empat{
+        text-align: justify;
+        width: 350px;
+        font-size: 15px;
+        font-weight: unset;
+    }
+    
+    .footer{
+        background-color: #04293A;
+        margin-top: 150px;
+        padding-bottom: 30px;
+    }
+    
+    .footer-container{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .isi-footer{
+        display: flex;
+        margin-top: 50px;
+        gap: 0px;
+        padding-left: 20px;
+        flex-direction: column;
+    }
+    
+    .isi-footer-satu{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .judul-isi-footer {
+        margin: 0px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .text-isi-footer{
+        margin: 0px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .brand{
+        font-size: 30px;
+        display: flex;
+        gap: 20px;
+        margin-top: 10px;
+    }
+    
+    a {
+        color: #0F4C75;
+    }
+    
+    a:hover{
+        color: white;
+        transition: 0.2s linear;
+    }
+    
+    .copyright-txt{
+        text-align: center;
+        font-size: 15px;
+        opacity: 50%;
+    }
+}

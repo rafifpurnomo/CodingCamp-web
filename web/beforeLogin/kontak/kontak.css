@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     width: 100%;
+    scroll-behavior: smooth !important;
     font-family: 'Poppins', sans-serif;
     color: white;
     background-color: #041C32;
@@ -71,82 +72,60 @@ li a:hover::after {
 
 .container-satu{
     display: flex;
-    flex-direction: row-reverse;
+    padding-top: 150px;
+    flex-direction: row;
     justify-content: center;
-    padding-top: 130px;
+    gap: 35px;
 }
 
-.vector-satu{
-    width: 550px;
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
-}
-
-.container-satu-txt{
+.location{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-}
-
-.container-satu-judul{
-    font-size: 40px;
-    font-weight: bold;
-    width: 550px;
-    /* text-align: center; */
-}
-
-.container-satu-paragraf{
-    font-size: 20px;
-}
-
-.mulai-belajar{
-    width: 150px;
-    height: 50px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 500;
-    background-color: transparent;
-    color: white;
+    align-items: center;
     border: 2px solid white;
+    border-radius: 10px;
+    width: 200px;
+    padding: 25px;
+    height: 210px;
 }
 
-.mulai-belajar:hover{
-    border: transparent;
-    background-color: #ECB365;
-    transition: 0.2s linear;
+.location-icon{
+    color: #ECB365;
+    font-size: 50px;
 }
 
-.container-dua{
-    padding-top: 250px;
+.location-txt{
+    margin-top: 20px;
 }
 
-.container-dua-judul{
-    text-align: center;
-    font-size: 40px;
+.alamat{
+    font-size: 18px;
     font-weight: bold;
-    text-transform: capitalize;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.container-dua-isi{
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    gap: 50px;
-}
-
-.isi-satu-container-dua{
+.alamat-lengkap{
+    font-size: 13px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    border-radius: 20px;
-    width: 200px;
+    color: white;
+    text-align: center;
 }
 
-.logo-foto{
-    width: 100px;
+.no-telp{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.alamat-email{
+    color: white;
 }
 
 .footer{
@@ -280,90 +259,81 @@ a:hover{
     
     .container-satu{
         display: flex;
-        flex-wrap: wrap;
-        padding-top: 130px;
-        align-items: center;
-    }
-    
-    .vector-satu{
-        width: 350px;
-        /* display: block;
-        margin-left: auto;
-        margin-right: auto; */
-    }
-    
-    .container-satu-txt{
-        display: flex;
+        padding-top: 150px;
+        justify-content: center;
+        gap: 35px;
         flex-wrap: wrap;
         flex-direction: column;
-    }
-    
-    .container-satu-judul{
-        font-size: 25px;
-        font-weight: bold;
-        width: 250px;
-        margin-bottom: 0px;
-    }
-    
-    .container-satu-paragraf{
-        font-size: 15px;
-        width: 300px;
-        margin-top: 10px;
-    }
-    
-    .mulai-belajar{
-        width: 125px;
-        height: 50px;
-        border-radius: 15px;
-        cursor: pointer;
-        font-size: 15px;
-        font-weight: 500;
-        background-color: transparent;
-        color: white;
-        border: 2px solid white;
-    }
-    
-    .mulai-belajar:hover{
-        border: 2px transparent;
-        background-color: #ECB365;
-        transition: 0.2s linear;
-    }
-
-    .container-dua{
-        padding-top: 100px;
-    }
-    
-    .container-dua-judul{
-        text-align: center;
-        font-size: 25px;
-        font-weight: bold;
-        text-transform: capitalize;
-    }
-    
-    .container-dua-isi{
-        display: flex;
-        padding: 0px;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-    
-    .isi-satu-container-dua{
-        display: flex;
-        background-color: white;
-        border-radius: 20px;
-        width: 150px;
-        justify-content: center;
-        object-position: center;
         align-items: center;
     }
     
-    .logo-foto{
-        width: 90px;
+    .location{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 250px;
+        padding: 20px;
+        height: 100px;
+    }
+    
+    .location-icon{
+        color: #ECB365;
+        font-size: 30px;
+    }
+    
+    .location-txt{
+        margin-top: unset;
+    }
+    
+    .alamat{
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .alamat-lengkap{
+        font-size: 10px;
+        width: 250px;
+        margin: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .fax-no{
+        font-size: 15px;
+        width: 250px;
+        margin: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .alamat-email{
+        color: white;
+        font-size: 12px;
+    }
+
+    .no-telp{
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        margin: unset;
     }
     
     .footer{
         background-color: #04293A;
-        margin-top: 150px;
+        margin-top: 50px;
         padding-bottom: 30px;
     }
     

@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* html , body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #041C32;
+    color: white;
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    color: white;
+    background-color: transparent;
+    transition: 0.2s;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: space-between;
+    width: 100%;
+    top: 0px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 25px;
+    margin-right: 20px;
+}
+
+.nav-judul{
+    margin-left: 15px;
+}
+
+.nav-judul a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-judul a:hover {
+    text-decoration: none;
+    color: #ECB365;
+    transition: all 0.2s ease;
+}
+
+nav ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    display: block;
+    transition: all 0.2s ease-in-out;
+
+}
+
+li a:hover::after {
+    width: 100%;
+    display: block;
+    height: 3px;
+    background-color: #ECB365;
+}
+
+.container {
+    position: relative;
+    top: 350px;
+    left: 50%;
+    width: 440px;
+    height: 470px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #064663;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px #ffd369;
+    border-radius: 10px;
+}
+
+.container-satu-txt{
+    margin: 0px;
+    color: white;
+    font-size: 30px;
+}
+
+.container-dua{
+    display: flex;
+    gap: 33px;
+}
+
+.input-nama{
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.form-nama{
+    border-radius: 10px;
+    width:150px;
+    height: 30px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600px;
+    background-color: transparent;
+    font-size: 14px;
+    outline: none;
+    border: 2px solid white;
+    padding-left: 10px;
+}
+
+.form-nama:focus{
+    border-color: #FFD369;
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.input-email{
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.form-email{
+    border-radius: 10px;
+    width: 326px;
+    height: 30px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600px;
+    background-color: transparent;
+    font-size: 14px;
+    outline: none;
+    border: 2px solid white;
+    padding-left: 35px;
+}
+
+.form-email:focus{
+    border-color: #FFD369;
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.form-pass{
+    border-radius: 10px;
+    width: 326px;
+    height: 30px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600px;
+    background-color: transparent;
+    font-size: 14px;
+    outline: none;
+    border: 2px solid white;
+    padding-left: 35px;
+}
+
+.form-pass:focus{
+    border-color: #FFD369;
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.pass-cta-satu{
+    height: 20px;
+    position: absolute;
+    background: none;
+    display: flex;
+    border: none;
+    left: 370px;
+    align-items: center;
+    bottom: 158px;
+    font-size: 20px;
+    color: #FFD369;
+    opacity: 50%;
+}
+
+.pass-cta-satu:active{
+    opacity: 100%;
+}
+
+.fa-at{
+    color: #FFD369;
+    position: fixed;
+    margin-top: 7px;
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+.fa-lock{
+    color: #FFD369;
+    position: fixed;
+    margin-top: 7px;
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+.bc-img{
+    display: flex;
+    position: absolute;
+    rotate: -90deg;
+    left: 450px;
+    bottom: 135px;
+}
+
+.cheva-bc{
+    width: 400px;
+}
+
+.buat-cta{
+    display: flex;
+    margin-top: 15px;
+    position: absolute;
+    left: 287px;
+    border-radius: 10px;
+    width: 120px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.buat-cta:hover{
+    background-color: #FFD369;
+    border: 2px solid #FFD369;
+    transition: linear;
+    transition-duration: 0.1s; 
+} 
+
+.kembali-cta{
+    display: flex;
+    margin-top: 15px;
+    position: absolute;
+    left: px;
+    border-radius: 10px;
+    width: 120px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.kembali-cta:hover{
+    background-color: #FFD369;
+    border: 2px solid #FFD369;
+    transition: linear;
+    transition-duration: 0.1s; 
+}
+
+.footer{
+    background-color: #04293A;
+    margin-top: 235px;
+    padding-bottom: 30px;
+}
+
+.footer-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.isi-footer{
+    display: flex;
+    margin-top: 50px;
+    padding-left: 20px;
+    gap: 40px;
+}
+
+.isi-footer-satu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 250px;
+}
+
+.judul-isi-footer {
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text-isi-footer{
+    margin: 0px;
+}
+
+.brand{
+    font-size: 30px;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.brand a {
+    color: #0F4C75;
+}
+
+.brand a:hover{
+    color: white;
+    transition: 0.2s linear;
+}
+
+.copyright-txt{
+    padding-right: 20px;
+    text-align: end;
+    opacity: 50%;
+}
+
+@media screen and (max-width: 500px) {
+
+    .navbar{
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        background-color: transparent;
+        transition: 0.2s;
+        justify-content: space-between;
+        width: 100%;
+        top: 0px;
+    }
+    
+    .nav-list{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+        display: flex;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 0px;
+        margin-right: 0px;
+    }
+    
+    .nav-judul{
+        margin-bottom: 0px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 0px;
+    }
+    
+    .nav-judul a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav-judul a:hover {
+        text-decoration: none;
+        color: #ECB365;
+        transition: all 0.2s ease;
+    }
+    
+    nav ul {
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    li a:after{
+        content: "";
+        width: 0%;
+        height: 3px;
+        display: block;
+        transition: all 0.2s ease-in-out;
+    
+    }
+    
+    li a:hover::after {
+        width: 100%;
+        display: block;
+        height: 3px;
+        background-color: #ECB365;
+    }
+
+    .container {
+        position: relative;
+        top: 280px;
+        width: 350px;
+        height: 500px;
+        padding: 0px;
+        transform: translate(-50%, -50%);
+        background: #064663;
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px #ffd369;
+        border-radius: 10px;
+    }
+    
+    .container-satu-txt{
+        margin-left: 10px;
+        color: white;
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    
+    .container-dua{
+        display: flex;
+        gap: 10px;
+        justify-content: space-around;
+    }
+    
+    .input-nama{
+        margin-bottom: 5px;
+        font-size: 13.5px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .form-nama{
+        border-radius: 10px;
+        width:130px;
+        height: 30px;
+        color: white;
+        font-size: 12px;
+        font-weight: 600px;
+        background-color: transparent;
+        font-size: 14px;
+        outline: none;
+        border: 2px solid white;
+        padding-left: 10px;
+    }
+    
+    .form-nama:focus{
+        border-color: #FFD369;
+        transition: ease-in-out;
+        transition-duration: 0.2s;
+    }
+    
+    .input-email{
+        margin-bottom: 5px;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .form-email{
+        border-radius: 10px;
+        width: 282px;
+        height: 30px;
+        color: white;
+        font-size: 12px;
+        font-weight: 600px;
+        background-color: transparent;
+        font-size: 14px;
+        outline: none;
+        border: 2px solid white;
+        padding-left: 35px;
+    }
+    
+    .form-email:focus{
+        border-color: #FFD369;
+        transition: ease-in-out;
+        transition-duration: 0.2s;
+    }
+
+    .container-tiga{
+        margin-left: 15px;
+    }
+
+    .form-pass{
+        border-radius: 10px;
+        width: 282px;
+        height: 30px;
+        color: white;
+        font-size: 12px;
+        font-weight: 600px;
+        background-color: transparent;
+        font-size: 14px;
+        outline: none;
+        border: 2px solid white;
+        padding-left: 35px;
+    }
+    
+    .form-pass:focus{
+        border-color: #FFD369;
+        transition: ease-in-out;
+        transition-duration: 0.2s;
+    }
+    
+    .pass-cta-satu{
+        height: 20px;
+        position: absolute;
+        background: none;
+        display: flex;
+        border: none;
+        left: 300px;
+        align-items: center;
+        bottom: 186px;
+        font-size: 20px;
+        color: #FFD369;
+        opacity: 50%;
+    }
+    
+    .pass-cta-satu:active{
+        opacity: 100%;
+    }
+    
+    .fa-at{
+        color: #FFD369;
+        position: fixed;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    
+    .fa-lock{
+        color: #FFD369;
+        position: fixed;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    
+    .bc-img{
+        display: flex;
+        position: absolute;
+        rotate: -90deg;
+        left: 450px;
+        bottom: 135px;
+    }
+    
+    .buat-cta{
+        display: flex;
+        margin-top: 35px;
+        position: absolute;
+        left: 215px;
+        border-radius: 10px;
+        width: 120px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: 2px solid white;
+    }
+    
+    .buat-cta a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .buat-cta:hover{
+        background-color: #FFD369;
+        border: 2px solid #FFD369;
+        transition: linear;
+        transition-duration: 0.1s; 
+    } 
+    
+    .kembali-cta{
+        display: flex;
+        margin-top: 35px;
+        position: absolute;
+        left: 15px;
+        border-radius: 10px;
+        width: 120px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: 2px solid white;
+    }
+
+    .kembali-cta a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .kembali-cta:hover{
+        background-color: #FFD369;
+        border: 2px solid #FFD369;
+        transition: linear;
+        transition-duration: 0.1s; 
+    }
+
+    .footer{
+        background-color: #04293A;
+        margin-top: 100px;
+        padding-bottom: 30px;
+    }
+    
+    .footer-container{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .isi-footer{
+        display: flex;
+        margin-top: 50px;
+        gap: 0px;
+        padding-left: 20px;
+        flex-direction: column;
+    }
+    
+    .isi-footer-satu{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .judul-isi-footer {
+        margin: 0px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .text-isi-footer{
+        margin: 0px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .text-isi-footer-telp{
+        margin: 0px;
+        gap: 10px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .brand{
+        font-size: 30px;
+        display: flex;
+        gap: 20px;
+        margin-top: 10px;
+    }
+    
+    a {
+        color: #0F4C75;
+    }
+    
+    a:hover{
+        color: white;
+        transition: 0.2s linear;
+    }
+    
+    .copyright-txt{
+        text-align: center;
+        font-size: 15px;
+        opacity: 50%;
+    }
+}

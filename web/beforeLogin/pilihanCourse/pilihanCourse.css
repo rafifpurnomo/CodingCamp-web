@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     width: 100%;
+    scroll-behavior: smooth !important;
     font-family: 'Poppins', sans-serif;
     color: white;
     background-color: #041C32;
@@ -69,84 +70,78 @@ li a:hover::after {
     background-color: #ECB365;
 }
 
-.container-satu{
+.judul{
     display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
-    padding-top: 130px;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
 }
 
-.vector-satu{
-    width: 550px;
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
+.judul-satu{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
 }
 
-.container-satu-txt{
+.judul-dua{
+    font-size: 15px;    
+    margin: 0px;
+}
+
+.container{
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: center;    
+    gap: 40px;;
 }
 
-.container-satu-judul{
-    font-size: 40px;
-    font-weight: bold;
-    width: 550px;
-    /* text-align: center; */
-}
-
-.container-satu-paragraf{
-    font-size: 20px;
-}
-
-.mulai-belajar{
-    width: 150px;
-    height: 50px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 500;
-    background-color: transparent;
-    color: white;
+.container-satu{
     border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 40px;
+    align-items: center;
+    width: 350px;
 }
 
-.mulai-belajar:hover{
-    border: transparent;
-    background-color: #ECB365;
-    transition: 0.2s linear;
-}
-
-.container-dua{
-    padding-top: 250px;
-}
-
-.container-dua-judul{
-    text-align: center;
+.icon{
     font-size: 40px;
+    color: #ECB365;
+}
+
+.penawaran-desc{
+    font-size: 25px;
     font-weight: bold;
     text-transform: capitalize;
 }
 
-.container-dua-isi{
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    gap: 50px;
-}
-
-.isi-satu-container-dua{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 20px;
-    width: 200px;
-}
-
-.logo-foto{
+.pilih-paket{
     width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.pilih-paket:hover{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #ECB365;
+    border: 2px transparent;
+    transition: 0.2s linear;
+}
+
+.pilih-paket-desc{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: capitalize;
 }
 
 .footer{
@@ -177,7 +172,6 @@ li a:hover::after {
 
 .judul-isi-footer {
     margin: 0px;
-    font-size: 20px;
     font-weight: bold;
 }
 
@@ -205,6 +199,7 @@ a:hover{
     padding-right: 20px;
     text-align: end;
     opacity: 50%;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 500px) {
@@ -277,90 +272,84 @@ a:hover{
         height: 3px;
         background-color: #ECB365;
     }
-    
-    .container-satu{
+
+    .judul{
         display: flex;
-        flex-wrap: wrap;
-        padding-top: 130px;
+        justify-content: center;
         align-items: center;
-    }
-    
-    .vector-satu{
-        width: 350px;
-        /* display: block;
-        margin-left: auto;
-        margin-right: auto; */
-    }
-    
-    .container-satu-txt{
-        display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
+        margin-top: 150px;
     }
     
-    .container-satu-judul{
-        font-size: 25px;
+    .judul-satu{
+        text-transform: capitalize;
+        font-size: 18px;
         font-weight: bold;
-        width: 250px;
-        margin-bottom: 0px;
+        margin: 0px;
     }
     
-    .container-satu-paragraf{
-        font-size: 15px;
-        width: 300px;
+    .judul-dua{
+        text-align: center;
+        width: 250px;
+        font-size: 15px;    
         margin-top: 10px;
     }
     
-    .mulai-belajar{
-        width: 125px;
-        height: 50px;
-        border-radius: 15px;
-        cursor: pointer;
-        font-size: 15px;
-        font-weight: 500;
-        background-color: transparent;
-        color: white;
+    .container{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;    
+        gap: 40px;;
+    }
+    
+    .container-satu{
         border: 2px solid white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: unset;
+        padding: 40px;
+        align-items: center;
+        width: 250px;
+        height: 150px;
     }
     
-    .mulai-belajar:hover{
-        border: 2px transparent;
-        background-color: #ECB365;
-        transition: 0.2s linear;
-    }
-
-    .container-dua{
-        padding-top: 100px;
+    .icon{
+        font-size: 30px;
+        color: #ECB365;
     }
     
-    .container-dua-judul{
-        text-align: center;
-        font-size: 25px;
+    .penawaran-desc{
+        font-size: 15px;
         font-weight: bold;
         text-transform: capitalize;
     }
     
-    .container-dua-isi{
-        display: flex;
-        padding: 0px;
-        gap: 20px;
-        flex-wrap: wrap;
+    .pilih-paket{
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: transparent;
+        border: 2px solid white;
     }
     
-    .isi-satu-container-dua{
-        display: flex;
-        background-color: white;
-        border-radius: 20px;
-        width: 150px;
-        justify-content: center;
-        object-position: center;
-        align-items: center;
+    .pilih-paket:hover{
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: #ECB365;
+        border: 2px transparent;
+        transition: 0.2s linear;
     }
     
-    .logo-foto{
-        width: 90px;
+    .pilih-paket-desc{
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        text-transform: capitalize;
     }
-    
+
     .footer{
         background-color: #04293A;
         margin-top: 150px;

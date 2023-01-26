@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* html , body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #041C32;
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    color: white;
+    background-color: transparent;
+    transition: 0.2s;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: space-between;
+    width: 100%;
+    top: 0px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 25px;
+    margin-right: 20px;
+}
+
+.nav-judul{
+    margin-left: 15px;
+}
+
+.nav-judul a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-judul a:hover {
+    text-decoration: none;
+    color: #ECB365;
+    transition: all 0.2s ease;
+}
+
+nav ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    display: flex;
+    transition: all 0.2s ease-in-out;
+
+}
+
+li a:hover::after {
+    width: 100%;
+    display: block;
+    height: 3px;
+    background-color: #ECB365;
+}
+
+.judul{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.judul-txt{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 450px;
+    text-transform: capitalize;
+}
+
+.container-satu{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 30px;
+}
+
+.container-satu-foto{
+    width: 500px;
+}
+
+.container-satu-desc{
+    width: 500px;
+}
+
+.container-dua{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:  center;
+    gap: 45px;
+}
+
+.judul-dua{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.judul-txt-dua{
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.pilihan{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 400px;
+    text-transform: capitalize;
+    padding: 15px;
+}
+
+.pilihan-txt{
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.pilihan-desc{
+    font-size: 15px;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+.harga{
+    display: flex;
+    gap: 10px;
+    text-transform: capitalize;
+}
+
+.harga-satu{
+    text-decoration: line-through;
+}
+
+.harga-dua{
+    font-size: 15px;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta:hover{
+    border: 2px transparent;
+    transition: 0.1s linear;
+    background-color: #ECB365;
+    color: #0F4C75;
+}
+
+.cta{
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.container-tiga-judul{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-tiga-judul-isi{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.benefits{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.benefit-isi{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.benefit-judul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fa-solid{
+    font-size: 25px;
+    color: #ECB365;
+}
+
+.benefit-txt-satu{
+    font-size: 25px;
+    margin: 0px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.benefit-txt-dua{
+    font-size: 15px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    width: 500px;
+}
+
+.footer{
+    background-color: #04293A;
+    margin-top: 150px;
+    padding-bottom: 30px;
+}
+
+.footer-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.isi-footer{
+    display: flex;
+    margin-top: 50px;
+    padding-left: 20px;
+    gap: 40px;
+}
+
+.isi-footer-satu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 250px;
+}
+
+.judul-isi-footer {
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text-isi-footer{
+    margin: 0px;
+}
+
+.brand{
+    font-size: 30px;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+a {
+    color: #0F4C75;
+}
+
+a:hover{
+    color: white;
+    transition: 0.2s linear;
+}
+
+.copyright-txt{
+    padding-right: 20px;
+    text-align: end;
+    opacity: 50%;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar{
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        background-color: transparent;
+        transition: 0.2s;
+        justify-content: space-between;
+        width: 100%;
+        top: 0px;
+    }
+    
+    .nav-list{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+        display: flex;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 0px;
+        margin-right: 0px;
+    }
+    
+    .nav-judul{
+        margin-bottom: 0px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 0px;
+    }
+    
+    .nav-judul a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav-judul a:hover {
+        text-decoration: none;
+        color: #ECB365;
+        transition: all 0.2s ease;
+    }
+    
+    nav ul {
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    li a:after{
+        content: "";
+        width: 0%;
+        height: 3px;
+        display: block;
+        transition: all 0.2s ease-in-out;
+    
+    }
+    
+    li a:hover::after {
+        width: 100%;
+        display: block;
+        height: 3px;
+        background-color: #ECB365;
+    }
+
+    .judul{
+        margin-top: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .judul-txt{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        width: 320px;
+        text-transform: capitalize;
+    }
+
+    .judul-dua{
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .judul-txt-dua{
+        font-size: 25px;
+        margin: 0px;
+        font-weight: bold;
+        text-align: center;
+        width: 320px;
+        text-transform: capitalize;
+    }
+    
+    .container-satu{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 30px;
+    }
+    
+    .container-satu-foto{
+        width: 300px;
+    }
+    
+    .container-satu-desc{
+        width: 350px;
+    }
+
+    .container-dua{
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:  center;
+        gap: 15px;
+    }
+    
+    .pilihan{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 400px;
+        text-transform: capitalize;
+        padding: 15px;
+    }
+    
+    .pilihan-txt{
+        font-size: 25px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        font-weight: bold;
+    }
+    
+    .pilihan-desc{
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-transform: capitalize;
+    }
+    
+    .harga{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 10px;
+        text-transform: capitalize;
+    }
+    
+    .harga-satu{
+        text-decoration: line-through;
+    }
+    
+    .harga-dua{
+        font-size: 15px;
+    }
+    
+    .button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cta:hover{
+        border: 2px transparent;
+        transition: 0.1s linear;
+        background-color: #ECB365;
+        color: #0F4C75;
+    }
+    
+    .cta{
+        height: 30px;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    
+    .container-tiga-judul{
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container-tiga-judul-isi{
+        margin-top: 0px;
+        font-size: 25px;
+        width: 300px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: capitalize;
+        text-decoration: underline;
+    }
+    
+    .benefits{
+        padding: unset;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: unset;
+        flex-direction: column;
+        gap: unset;
+    }
+    
+    .benefit-isi{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 350px;
+    }
+    
+    .benefit-judul{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .fa-solid{
+        font-size: 25px;
+        color: #ECB365;
+    }
+    
+    .benefit-txt-satu{
+        font-size: 25px;
+        margin: 0px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    
+    .benefit-txt-dua{
+        font-size: 15px;
+        margin-top: 10px;
+        text-transform: capitalize;
+        width: 350px;
+    }
+
+    .footer{
+        background-color: #04293A;
+        margin-top: 50px;
+        padding-bottom: 30px;
+    }
+    
+    .footer-container{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .isi-footer{
+        display: flex;
+        margin-top: 50px;
+        gap: 0px;
+        padding-left: 20px;
+        flex-direction: column;
+    }
+    
+    .isi-footer-satu{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .judul-isi-footer {
+        margin: 0px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .text-isi-footer{
+        margin: 0px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .text-isi-footer-telp{
+        margin: 0px;
+        gap: 10px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .brand{
+        font-size: 30px;
+        display: flex;
+        gap: 20px;
+        margin-top: 10px;
+    }
+    
+    a {
+        color: #0F4C75;
+    }
+    
+    a:hover{
+        color: white;
+        transition: 0.2s linear;
+    }
+    
+    .copyright-txt{
+        text-align: center;
+        font-size: 15px;
+        opacity: 50%;
+    }
+}
